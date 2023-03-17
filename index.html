@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            Draw
+        </h1>
+    </header>
+    
+    <form class="form">
+        <div class="close"></div>
+        <h2>Configuraciones</h2>
+        <div class="div-form">
+            
+            <div class="form-input">
+                <label for="">Tamaño</label>
+                <input type="range" id="lineWith" value="5" max="100" min="20">
+            </div>
+            <div class="form-input">
+                <label for="">Color</label>
+                <input type="color" id="color">
+            </div>
+            <div class="form-input">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+    
+    <main>
+        <div class="container">
+            <canvas id="can" width="900" height="900"></canvas>
+        </div>
+    </main>
+    
+    <div class="btn_menu">configuraciones</div>
+    
+    <script src="menu.js"></script>
+    <script src="dibujo.js"></script>
+</body>
+</html>

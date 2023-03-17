@@ -1,0 +1,111 @@
+.btn_menu{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    color: #f77;
+    text-shadow: 0 0 5px #f77, 0 0 10px #f77;
+    font-size: 1.2em;
+}
+
+.close{
+    position: absolute;
+    top: 5%;
+    height: 50px;
+    width: 50px;
+    right: 5%;
+}
+
+.close::after, .close::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    bottom: 50%;
+}
+.close::after{
+    transform:  rotate(45deg);
+}
+.close::before{
+    transform:  rotate(-45deg);
+}
+@media screen and (max-width: 590px) {
+    .close{
+        top: 85% !important;
+    }
+}
+.form h2{
+    text-shadow: 0 0 5px #77f, 0 0 10px #77f;
+    color: #77f;
+}
+
+.form{
+    transform: scale(0);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;    
+    background: var(--color--);
+    inset: 0;
+}
+.formActivo{
+    transform: scale(1);
+}
+.div-form{
+    width: 90%;
+    height: 70%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+header{
+    padding: .8em .4em;
+}
+header h1{
+    background: var(--color--);
+    color: #77f;
+    text-shadow: 0 0 5px #77f, 0 0 10px #77f;
+    text-align: center;
+    font-size: 2.6em;
+}
+
+form .form-input{
+    min-width: 250px;
+    width: calc(100% / 2.1);
+    margin: .7em .3em;
+    font-size: 1.1em;
+}
+form .form-input:hover{
+    transition: .2s ease;
+    transform: scale(1.1);
+}
+form .form-input *{
+    display: flex;
+    flex-direction: column;
+    padding: .3em 0;
+    margin: auto;
+    
+}
+form .form-input [type="color"], form .form-input button{
+    width: 50%;
+    display: block;
+}
+form .form-input label{
+    color: #77f;
+    text-shadow: 0 0 5px #77f, 0 0 10px #77f;
+}
+form .form-input button{
+    color: #f77;
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #f77, 0 0 10px #f77;
+    text-align: center;
+}
